@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>С 27-летием, любимая!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="floating-hearts" aria-hidden="true"></div>
+
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Для тебя ♡</div>
+        <a href="#letter" class="nav-link">Открыть письмо</a>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">особенный день • 27 лет</p>
+          <h1>С днём рождения, <span>любимая</span></h1>
+          <p class="hero-subtitle">
+            Этот маленький сайт — для моей самой дорогой девушки на свете. Пусть
+            каждый её миг будет наполнен радостью и смыслом. Об остальном я сам
+            позабочусь!
+          </p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn primary">Наши моменты</a>
+            <a href="#letter" class="btn secondary">Моё поздравление</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="photo-frame main-photo">
+            <img
+              src="assets/photos/main-photo.jpg"
+              alt="Её фото"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=80'
+              "
+            />
+          </div>
+          <div class="badge">27</div>
+          <p>
+            Сегодня весь мир чуть красивее, потому что у тебя день рождения.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro reveal">
+        <p class="section-kicker">коротко о главном</p>
+        <h2>Ты — мой самый дорогой человек</h2>
+        <p>
+          Я хочу, чтобы этот день был тёплым, спокойным и наполненным любовью.
+          Спасибо тебе за ту улыбку, за ту веру и поддержку, что ты даришь мне.
+          Одна ты знаешь, что у меня на уме, на душе, и только тебе я могу
+          доверить все те боли, что у меня есть!
+        </p>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <div class="section-heading">
+          <p class="section-kicker">фотографии</p>
+          <h2>Наши моменты</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="memory-card large photo-1">
+            <img
+              src="assets/photos/photo-1.jpg"
+              alt="Фото 1"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80'
+              "
+            />
+            <div class="memory-caption">
+              <h3>Наш любимый момент</h3>
+              <p>
+                Дорогая, ты помнишь тот день? Да, именно тогда я понял, что
+                сильно люблю тебя! Ну плюс была возможность разложиться на
+                колесе обозрения 😂
+              </p>
+            </div>
+          </article>
+
+          <article class="memory-card photo-2">
+            <img
+              src="assets/photos/photo-4.jpg"
+              alt="Фото 2"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80'
+              "
+            />
+            <div class="memory-caption">
+              <h3>Твоя улыбка</h3>
+              <p>
+                Моя бусинка, каждый день ты меня освещаешь своей улыбкой. Чаще
+                улыбайся, тебе очень идёт. Очень люблю тебя 😍
+              </p>
+            </div>
+          </article>
+
+          <article class="memory-card photo-3">
+            <img
+              src="assets/photos/photo-3.jpg"
+              alt="Фото 3"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1501901609772-df0848060b33?auto=format&fit=crop&w=900&q=80'
+              "
+            />
+            <div class="memory-caption">
+              <h3>Семья</h3>
+              <p>
+                Какие бы трудности перед нами не стояли, помни, мы с Марсиком -
+                твоя семья и всегда будем рядышком!
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reasons reveal">
+        <div class="section-heading">
+          <p class="section-kicker">почему я тебя люблю</p>
+          <h2>27 маленьких причин</h2>
+        </div>
+
+        <div class="reason-list" id="reasonList"></div>
+      </section>
+
+      <section id="letter" class="section letter reveal">
+        <div class="letter-paper">
+          <p class="section-kicker">личное письмо</p>
+          <h2>Любимая, с 27-летием!</h2>
+          <p>
+            Моя дорогая, моя любимая, моя родная. <br />
+            <br />
+
+            Да, пусть торт стоит перед тобой не красный бархат, а ореховый.<br />
+            Пусть, у меня нет еще Porsсhe, и мы не бывали за границей. <br />
+            Пусть, я бывают агрессивен и токсичен. Пусть...<br />
+            Этот список можно вечно продолжать. <br />
+            Но ты знай, ты просто знай я не перестаю и на мгновенье думать о тех
+            богатствах, что могут снизойти до нас.<br />
+            <br />
+
+            И пусть мои слога не так складны - я не Высоцкий и не Пушкин.<br />
+            Я простой парнишка, который полюбил!<br />
+            Я полюбил великое творенье - милейшую девушку души.<br />
+            Пусть мой слог написан криво и паршиво. <br />
+            Зато он написан сердцем. Без ИИ.<br />
+            <br />
+
+            Знаешь, я часто думаю: что такое истинное богатство?<br />
+            Машины, деньги , дом? Нет. <br />
+            Настоящее богатство - любимый, близкий человек.<br />
+            Ты появилась в моей жизни, в тот час, когда я погибал.<br />
+            Я не забуду никогда! <br />
+            <br />
+
+            Пускай я не богат, ПОКА!<br />
+            Но твоя любовь и вера, как всегда, непоколебимы.<br />
+            Я оправдаю их и не подведу тебя.<br />
+            Я взял курс на воскрешение. <br />
+            И из пепла поднимусь! <br />
+            <br />
+
+            Вилошкина моя, я клянусь тебе в своих стихах. <br />
+            Построим мы с тобой семью и дом, <br />
+            Куплю я нам с тобою Porsсhe. <br />
+            Рим, Белград, Киото, Талин - везде наступит наш с тобою шаг <br />
+            <br />
+
+            Молю тебя я об одном, <br />
+            Не грусти и верь, ты просто верь, <br />
+            Я не подведу тебя. <br />
+            Пока ты рядом, мне по силам города! <br />
+            <br />
+
+            Моя дорогая и любимая. Я поздравляю тебя с Днём Рождения! Я желаю
+            тебе счастья, спокойствия, здоровья и исполнения всего, о чём ты
+            мечтаешь. Пусть каждый год делает тебя ещё увереннее, свободнее и
+            счастливее.
+          </p>
+          <p>
+            Я очень благодарен за то, что ты есть у меня. Ты моё главное
+            богатство. Моё настоящее сокровище. Да, порой, я тебя расстраиваю.
+            Но не думай, что ты мне безразлична. Я всегда переживаю о тебе, я
+            сильно тебя люблю и дорожу тобой. Не грусти никогда о том, чего у
+            нас нет. Я всё достану вот увидишь. Живи, развивайся, держи всегда
+            нос по ветру и хвост пистолетом! Мы с Марсиком рядом... ВСЕГДА!
+            <br />
+            <br />
+            А мне еще шарики дуть в ванной, пока ты спишь 😆
+          </p>
+          <p>С днём рождения, моя золотая. Я люблю тебя ❤️</p>
+          <div class="signature">Твой родной</div>
+        </div>
+      </section>
+
+      <section class="section final reveal">
+        <h2>Нажми на сердечко</h2>
+        <button class="heart-button" id="surpriseButton" aria-label="Сюрприз">
+          ♡
+        </button>
+        <p id="surpriseText">Пусть сегодня у тебя будет самый нежный день.</p>
+      </section>
+    </main>
+
+    <footer class="footer">Сделано с любовью ❤️ 2026</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
